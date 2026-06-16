@@ -1,0 +1,105 @@
+/* Je suis un commentaire en CSS*/
+/*NB : NE JAMAIS METTRE D'ESPACE ENTRE LES VALEURS ET LES UNITES. PAR EXEMPLE NE PAS ECRIRE
+10 px MAIS PLUTÔT ECRIRE 10px*/
+/* font-size pour la taille de la police ; font-style pour italic ou normal ; font-weight pour gras
+line-height pour l'espacement entre deux lignes, font-family pour le type de police i.e tahoma ou autres*/
+/* body{
+    padding : 0px; /* Faire ça pour s'assurer que chaque visiteur verra verra un résultat conforme
+    à nos attentes
+    margin : 0px;
+}*/
+p{
+    font-size: 20px;
+    font-style: italic ;
+    line-height: 30px;
+    font-family: Arial, Tahoma, Helvetica, garamond, sans-serif;
+
+}
+h1{
+    border-width : 2px;
+    border-style : dashed;
+    border-color: green;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* le dièse est là pour dire qu'il indique un id dans le HTML*/
+#titre1{
+   color : rgb(255,100,0) ; 
+   font-weight: 650; /* comprise entre 100 (moins gras) et 900 (plus gras)*/
+   opacity : 0.7; /* comprise entre 0 (totalement transparent) et 1 (totalement opaque)*/
+   text-indent: 20px;
+   text-transform: capitalize; /* gère l'aspect des caractères (miniscules ou majuscules) prend les valeurs
+   uppercase pour majuscule, lowercase pour minuscule et capitalize pour première lettre en Maj.*/
+}
+#para_1{
+    color : rgba(175,10,175,0.7) ;/* niveau de red, green et blue et opacité*/
+    letter-spacing: 3px; /* pour l'espacement entre les lettres d'un mot*/ 
+    word-spacing: 10px; /* pour l'espacement entre les mots*/
+}
+/* le point est là pour dire qu'il indique une class dans le HTML*/
+.para_2{
+    color : red ;
+    text-shadow: 2px 3px 1px green; /* gère l'effet d'ombre d'un texte. 1ère valeur : déplacement 
+    horizontal de l'ombre, seconde verticale, 3ième rayon de propagation de l'ombre et 4ième couleur*/
+}
+.souligne{
+    text-decoration: underline;
+}
+.container{
+    font-style: italic ; /* pour gérer l'inclinaison oblique ou italic ou normal ou inherit (pour hériter
+    du style de son parent)*/
+}
+a[href]{
+    color:red ;
+}
+a[href*=page1]{
+    color: orange ;
+}
+.test_px_em_1{
+    font-size: 30px; /* pour gérer la taille des textes*/
+}
+.test_px_em_2{
+    font-size: 5 em; 
+}
+div {
+    font-style: normal;
+}
+.normal{
+    font-style: inherit;
+}
+.pdiv{
+    width : 500px;
+    border : 2px solid red ;
+    text-align: justify ; /* pour l'alignement du texte left, right, center, justify ou inherit*/
+    text-decoration: line-through ; /* pour la décoration en prenant les valeurs underline, overline,
+    line-through (texte barré), blink, inherit, none.*/
+    /* overline : trait au dessus, line-through : barré.*/
+    box-shadow: 2px 2px 3px blue; /* gère l'effet d'ombre d'une boite. 1ère valeur : déplacement 
+    horizontal de l'ombre, seconde verticale, 3ième rayon de propagation de l'ombre et 4ième couleur*/
+}
+
+.testeur{
+    border-width : 2px;
+    border-style : dashed; /*peut prendre les valeurs solid (trait plein), dashed (tiret), dotted (pointillé)...*/
+    border-color : orange;
+    border-radius: 20px; /*pour arrondir les bords*/
+    padding-top: 50px; /*marge intérieure supérieure. Possible d'utiliser padding-right,left ou bottom*/
+    width : auto ; /*width pour la largeur et height pour la hauteur*/
+    height : 100px ;
+}
+.pétal{
+    border : 1px solid black;
+}
+.p1{
+    float : left ; /*sert à positionner un élément*/
+}
+.p2{
+    border : 3px dashed blue ;
+    clear : left ; /*Pour que l'élément qui suit un flottant en question se place en dessous de ce
+     flottant en question. Elle accepte trois valeurs : left, right ou both. left pour que l'élément se 
+     place en dessous d'un float left. right pour float right et both pour soit float left ou float right*/
+     /*utilisé tjrs à la suite d'un float.*/
+}
+.p2 strong{
+    float : right ;
+}

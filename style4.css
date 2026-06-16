@@ -1,0 +1,62 @@
+body{
+    /*Insertion de plusieurs images à la fois de cette manière ci-dessous
+    background :
+    url("image_ka\'ba_2.jpg") fixed no-repeat top left,
+    url("images/image_qur\'an.jpg") fixed no-repeat top right,
+    url("projets\ pdf/image_ka'ba.jpg") fixed no-repeat 500px 100px;*/
+    /*Les dégradés linéaires vont de haut en bas par défaut. Mais ils peuvent aller de bas en haut, de gauche
+    à droite etc...*/
+    /*background-image : -webkit-linear-gradient(orange, white, green);
+    background-image: -moz-linear-gradient(Orange, white, green);
+    background-image: -ms-linear-gradient(Orange, white, green);
+    background-image: -o-linear-gradient(Orange, white, green);
+    background-image: linear-gradient(Orange, white, green);*/
+    /*Pour que les dégradés linéaires vont de gauche à droite on fais comme ça :
+    background-image : -webkit-linear-gradient(to right,orange, white, green);
+    De même on peut mettre to left, to top.*/
+    /*On peut préciser aussi un angle d'inclinaison pour nos dégradés linéaires de cette manière :
+    background-image : linear-gradient(135deg,orange, white, green);*/
+    /*background-image : -webkit-radial-gradient(orange, white, green);
+    background-image: -moz-radial-gradient(Orange, white, green);
+    background-image: -ms-radial-gradient(Orange, white, green);
+    background-image: -o-radial-gradient(Orange, white, green);
+    background-image: radial-gradient(Orange, white, green);*/
+    /*On peut préciser aussi la forme de notre dégradé circle pour cercle ou ellispe (par déafut);*/
+    /*background-image: radial-gradient(circle, Orange, white, green);*/
+    /*On peut préciser aussi la largeur et la hauteur de nos dégradés;*/
+    background-image: radial-gradient(500px 400px, green, white, Orange); /*valeur 1 : largeur,
+    valeur 2 : hauteur. On peut aussi déplacer le centre du dégradé*/
+}
+.img1{
+    width : 150px;
+    display : block;
+    margin-bottom : 20px;
+}
+
+.img2{
+    width : 200px;
+    float : right;
+    padding : 5px;
+    border : 2px dashed black;
+}
+td, th{
+    border : 2px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+#commentaire{
+    width : 500px;
+    height : 100px;
+}
+
+p{
+    color : red;
+}
+@media all and (max-width: 1280px){ /*Ce média query veut dire : par défaut nos paragraphes sont en rouge
+                Mais avec ce média query, tous les écrans dont la taille est inférieure à 1280px auront
+                leurs paragraphes en bleu*/
+    p {
+        color : blue;
+    }
+}

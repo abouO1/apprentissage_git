@@ -1,0 +1,33 @@
+body{
+    background-color: orange;
+}
+/*h1{
+    border : 3px dashed red;
+    background-color: white;
+    text-align: center;
+}*/
+a{
+    text-decoration : none;
+    color : yellow;
+}
+a:hover{ /*Cela signifie lorsque le lien sera survolé par le curseur de la souris, alors on fait tous ça*/
+    color : white;
+    text-decoration: underline;
+    border-top : 1px solid white;
+}
+a:visited{ /*Cela signifie lorsque le lien sera visité une fois, alors on fait ça*/
+    color : brown;
+}
+#power{
+    border : 5px solid blue;
+    background-color : white;
+    text-align: center;
+}
+.looser{
+    border : 5px solid yellow;
+    background-color : pink;
+    text-align: center;
+    width : 800px;
+    font-weight : normal;
+    font-size : 27px;
+}

@@ -1,0 +1,21 @@
+p{
+    border : 1px solid blue;
+    color : blue;
+}
+.p1:hover{
+    color : red;
+}
+.p2::before{
+    content:"Hello, i am a paragraph"
+}
+a:visited{
+    color : green;
+}
+
+@media screen and (max-width : 300px){ 
+    p{
+        border : 3px dashed orange;
+        color : green ;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page 4</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <p>Cette page est la page 4. Elle est vierge pour le moment</p>
+    <h1>Voyons les dégradés linéaires et radiaux</h1>
+    <h1>Voyons comment on insère les images</h1>
+    <p><img class="img1"src="images/image_qur'an.jpg" alt="un mushaf" title="Un moushaf"/></p> <!--alt 
+    s'affiche au cas où l'image ne s'affiche pas et title s'affiche lorsqu'on défile le curseur sur l'image -->
+    <p><img class="img2"src="image_ka'ba_2.jpg" alt="la ka'ba" title="ka'ba"/></p>
+    <h1>Insérons à présent des audios dans notre page</h1>
+    <audio controls="controls" autoplay="autoplay" preload="auto">
+    <!--controls permet d'afficher les boutons de lecture, pause et volume-->
+        <source src="jugement_des_nasidji.ogg"> </source> <!--On met beaucoup de format vidéo exprès pour 
+        qu'on ai pas de problème quelque soit le navigateur-->
+        <source src="jugement_des_nasidji.mp3"> </source>
+    </audio>
+    <h1>Voyons maintenant comment insérer une vidéo dans notre site</h1>
+    <video controls="controls" poster="image_ka'ba_2.jpg" preload="auto" width="500px"> 
+    <!--Le poster permet d'afficher une image avant que la vidéo ne soit lue-->
+        <source src="Les_fonctions_en_python.webm"></source>
+        <source src="Les_fonctions_en_python.mp4"></source>
+    </video>
+    <h1>Testons les éléments figure et figcaption</h1>
+    <figure>
+        <img src="image_ka'ba_2.jpg" alt="La ka'ba" title="ka'ba">
+        <figcaption style="font-weight: bold">Picture of ka'ba</figcaption>
+    </figure>
+    <h1>A présent voyons les tableaux</h1>
+    <table>
+        <tr> <!--tr pour table raw (ligne)-->
+            <th>Nom</th> <!--th pour table head (en-tête)-->
+            <th>Prénom</th>
+            <th>Âge</th>
+        </tr>
+        <tr>
+            <td>Koné</td> <!--td pour table data (données)-->
+            <td>Aboubakr</td>
+            <td>23 ans</td>
+        </tr>
+        <tr>
+            <td>Ouattara</td>
+            <td>Mohammad</td>
+            <td>27 ans</td>
+        </tr>
+    </table>
+    <h1>Voyons maintenant un long tableau bien structuré avec thead, tbody et tfoot</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Mois</th>
+                <th>Salaire</th>
+                <th>Dépenses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janvier</td>
+                <td>3000euro</td>
+                <td>1000euro</td>
+            </tr>
+            <tr>
+                <td>Février</td>
+                <td>3300euro</td>
+                <td>1200euro</td>
+            </tr>
+             <tr>
+                <td>Mars</td>
+                <td>5300euro</td>
+                <td>2000euro</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>11600euro</td>
+                <td>4200euro</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Apprenons à fusionner dans les tableaux</h1>
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Nationnalité</th>
+        </tr>
+        <tr>
+            <td>Coulibaly</td>
+            <td>Adama</td>
+            <td rowspan="2"> Ivoirienne</td>
+        </tr>
+        <tr>
+            <td colspan="2"> Bah Mory</td>
+        </tr>
+    </table>
+    <h1>Voyons à présent les formulaires</h1>
+    <form action="traitement.php" method="post">
+        <fieldset>
+            <legend>Informations obligatoires</legend>
+                <label for="pseudo">Entrer votre pseudo : </label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="ex : Aboubakr" required="required">
+                <!--placeholder permet de donner un exemple de remplissage et required veut dire que ce 
+                champ est obligatoire-->
+                <br>
+                <br>
+                <label for="pass"> Entrer votre mot de passe : </label>
+                <input type="password" name="pass" id="pass" required="required">
+                <br>
+                <br>
+                <label for="site"> Entrer l'adresse de votre site : </label>
+                <input type="url" name="site" id="site">
+                <br>
+                <br>
+                <label for="num_tel"> Entrer votre numéro de téléphone : </label>
+                <input type="tel" name="num_tel" id="num_tel">
+                <br>
+                <br>
+        </fieldset>
+        <fieldset>
+            <legend>Informations facultatives</legend>
+                 <p>
+                    choisissez votre genre :
+                    <input type="radio" name="sexe" value="homme" id="homme" checked="checked"> <label for="homme">Masculin</label>
+                    <!--l'élément checked permet de précocher une case à l'avance-->
+                    <input type="radio" name="sexe" value="femme" id="femme"> <label for="femme">Feminin</label>
+                </p>
+            <label for="commentaire"> Entrer votre commantaire ici, merci : </label>
+            <textarea name="commentaire" id="commentaire"></textarea>
+        </fieldset> <br>
+        <input type="submit" value="Envoyer"/>
+    </form>
+    <h1>Voyons à présent les zones d'option</h1>
+    <form action="traitement.php" method="post">
+        <p>
+            Cochez votre âge : <br>
+            <input type="radio" name="âge" value="mineur" id="mineur" checked="checked"> <label for="mineur">- 18ans</label><br>
+            <!--l'élément checked permet de précocher une case à l'avance-->
+            <input type="radio" name="âge" value="majeur" id="majeur"> <label for="majeur">+ 18ans</label>
+        </p>
+    </form>
+    <h1>Voyons à présent les listes déroulantes</h1>
+    <form action="traitement.php" method="post">
+        <p>
+            <label for="pays"> Veuillez choisir votre pays dans la liste :</label> <br>
+            <select name="pays" id="pays">
+                <optgroup label="Afrique">
+                    <option value="algérie">Algérie</option>
+                    <option value="côte d'ivoire">Côte d'Ivoire</option>
+                    <option value="maroc">Maroc</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="france">France</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="italie">Italie</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="etats-unis">USA</option>
+                    <option value="canada">Canada</option>
+                </optgroup>
+            </select>
+        </p>
+    </form>
+</body>
+</html>

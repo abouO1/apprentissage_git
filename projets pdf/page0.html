@@ -1,0 +1,139 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ma première page web</title>
+        <!--Première méthode pour faire du CSS (mettre cela dans la balise style au sein du head)-->
+        <!--<style>
+            p{
+                color: blue;
+                font-size: 16 px;
+            }
+        </style>
+        -->
+        <link rel="stylesheet" href="style0.css">
+    </head>
+    <body>
+        <!--Parlons des balises strong, em et mark-->
+        <p>moi je suis <strong class="test_px_em_1">un mot en gras</strong></p>
+        <p>Moi je suis <em class="test_px_em_2"> un mot en italique</em></p>
+        <p>Moi je suis <mark>un mot en évidence</mark> </p>
+        <!--les listes non ordonnées-->
+        <h1>On va parler des listes non-ordonnées</h1>
+        <ul>
+            <li> FRAISE </li>
+            <li>mangue</li>
+            <li>papaye</li>
+        </ul>
+        <!--les listes ordonnées-->
+        <h1>On va parler maintenant des listes ordonnées</h1>
+        <ol>
+            <li>Introduction</li>
+            <li>PArtie 1</li>
+            <li>Partie 2</li>
+            <li>Partie 3</li>
+            <li>Conclusion</li>
+        </ol>
+        <!--Pour les listes de définition, tjrs suivre cette architecture,
+        i.e mettre le tout dans la balise dl puis mettre dt avant dd-->
+        <h1>Parlons maintenant des listes de définition</h1>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML signifie HyperText Markup Language</dd>
+        </dl>
+        <!--les listes imbriquées-->
+        <h1>Listes imbriquées</h1>
+        <ol>
+            <li>Judaïsme</li>
+            <li>Chritianisme</li>
+                <ul>
+                    <li>Ancien testament</li>
+                    <li>Nouveau testament</li>
+                </ul>
+            <li>Islam</li>
+            <ol>
+                    <li>Coran</li>
+                    <li>Hadith</li>
+            </ol>
+        </ol>
+
+        <h2>Voyons le lien de type ancre</h2>
+        <!--Le lien de type ancre permet de mettre un lien qui redirige vers une autre section de 
+        notre site web-->
+        <!--Deuxième méthode pour faire du CSS (mettre directement dans les balises)-->
+        <!--        <p style="color : red ; font-size: 32 px;">Sommaire (Cliquez sur une partie pour y accéder directement) </p>
+        -->
+        <!--
+        <ol>
+            <li> <a href="#partie1">Partie I : Nous allons parler du HTML </a></li>
+            <li> <a href="#partie2">Partie II : Nous allons parler du CSS maintenant</a></li>
+            <li> <a href="#partie3"> Partie III : Attaquons nous au php à présent</a></li>
+        </ol>
+        -->
+        <p> <a href="#partie1"> Partie I : Nous allons parler du HTML </a></p>
+        <p> <a href="#partie2"> Partie II : Nous allons parler du CSS maintenant </a></p>
+        <p> <a href="#partie3"> Partie III : Attaquons nous au php à présent </a></p>
+        <h2 id="partie1"> Partie I : Nous allons parler du HTML </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus nobis facere facilis, quos sapiente dolore? Molestias, pariatur? 
+            Deleniti illum mollitia qui, saepe unde dolorum, minus nesciunt corrupti, error culpa animi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus nobis facere facilis, quos sapiente dolore? Molestias, pariatur? 
+            Deleniti illum mollitia qui, saepe unde dolorum, minus nesciunt corrupti, error culpa animi!
+        </p>
+        <!--Direction vers des pages internes d'un même site web-->
+        <h1>Direction sur différentes pages (lien interne)</h1>
+        <p>Ce lien vous transporte de la page 0 vers la page <a href="page1.html">page 1</a></p>
+        <p>Ce lien vous transporte de la page 0 vers la page <a href="Sous-dossier/Page2.html">page 2</a></p>
+        <p>Ce lien vous transporte de la page 0 vers la page <a href="../page4.html">page 4</a></p>
+        <!-- moi je suis un commentaire-->
+         <!--Direction sur un lien externe à notre site web-->
+        <h1>Direction sur un lien externe</h1>
+        <p>Pour vous rendre sur google, cliquez sur ce lien <a href="http://google.fr" target="_blank"> ici </a></p>
+        <!--La valeur _blank de l'attribut target permet de rediriger en allant sur un autre onglet ou une
+        nouvelle fenêtre-->
+
+        <h2 id="partie2"> Partie II : Nous allons parler du CSS maintenant </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus nobis facere facilis, quos sapiente dolore? Molestias, pariatur? 
+            Deleniti illum mollitia qui, saepe unde dolorum, minus nesciunt corrupti, error culpa animi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus nobis facere facilis, quos sapiente dolore? Molestias, pariatur? 
+            Deleniti illum mollitia qui, saepe unde dolorum, minus nesciunt corrupti, error culpa animi!
+        </p>
+        <h2 id="partie3"> Partie III : Attaquons nous au php à présent </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus nobis facere facilis, quos sapiente dolore? Molestias, pariatur? 
+            Deleniti illum mollitia qui, saepe unde dolorum, minus nesciunt corrupti, error culpa animi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Temporibus nobis facere facilis, quos sapiente dolore? Molestias, pariatur? 
+            Deleniti illum mollitia qui, saepe unde dolorum, minus nesciunt corrupti, error culpa animi!
+        </p>
+        <!--lien pour envoyer un mail-->
+        <h1>Pour mettre un lien qui permet d'envoyer un mail : </h1>
+        <p>Vous pouvez nous envoyer un mail en cliquant <a href="mailto:aboubakr@gmail.com"> ici </a></p>
+        <!--lien pour télécharger un fichier pdf, txt ou autres-->
+        <h1>Télécharger un fichier à partir de notre page web</h1>
+        <p>Vous pouvez télécharger notre livre en cliquant <a href="1-html_css.pdf"> ici </a></p>
+        <!--Usage des selecteurs id et class pour le CSS-->
+        <h1 id="titre1">Parlons des attributs id et class </h1>
+        <p id="para_1">Moi je suis là pour tester le <strong> selecteur id </strong></p>
+        <p class="para_2">Et moi pour le selecteur class</p>
+        <!--Les attributs span et div-->
+        <h1>Les attributs span et div</h1>
+        <div class="container">
+            <h1><span class="souligne"> Les attributs </span> span et div </h1>
+            <p>Un paragraphe</p>
+            <p>Un autre paragraphe</p>
+        </div>
+        <div>
+            <p class="normal"> Moi je ne suis pas en italique</p>
+        </div>
+        <h1 class="Testeur">On va tester la propriété text-align</h1>
+        <p class="pdiv"> Je suis un paragraphe dans un div. </p>
+        <h1> Testons la propriété float </h1>
+        <p class="pétal">Paragraphe étalon</p>
+        <p class="p1">Un paragraphe </p>
+        <p class="p2">Un <strong> autre </strong> paragraphe</p>
+    </body>
+</html>

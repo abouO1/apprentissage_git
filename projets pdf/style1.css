@@ -1,0 +1,70 @@
+body{
+    /*background-color: orange;*/
+    background-image: url("image_ka\'ba.jpg");
+    background-repeat: no-repeat; /*Prend les valeurs : repeat-x (repète seulement horizontalement), 
+    repeat-y (verticalement), no-repeat ou repeat (par défaut)*/
+    background-position: 100px 50px; /*Prend deux valeurs : valeur 1 : décallage horizontal vers la 
+    droite et valeur 2: décallage vers le bas*/
+    background-attachment: scroll ; /*prend les valeurs : fixed (pour que l'image défile en même temps 
+    qu'on descend sur la page) et scroll (pour bloquer l'image)*/
+}
+
+p{
+    font-size: 20px;
+    /*text-decoration: underline ;*/
+               
+}
+h1{
+    text-decoration: underline;
+}
+.petal{
+    border : 1px solid black;
+    /*height: 200px;
+    width:250px;
+    background-image: url("image_ka\'ba.jpg");*/
+}
+.p1{
+    display: inline-block ; /*sert à changer le type d'un élément. Peut prendre les valeurs inline, block
+    et inline-block. 1 élément de type inline-block sera considéré comme inline mais on pourra modifier
+    sa hauteur et sa largeur.*/
+}
+.p2{
+    border : 3px dashed blue ;
+   display: inline-block ;
+   width : 200px; 
+}
+.petal-2{
+    border : 1px solid green;
+}
+.para2-1{
+    position : relative ; /* position permet de positionner des éléments. Il peut prendre les valeurs
+    fixed, relative et absolute*/
+    left : 100px; /* Si on prend relative, om choisi right/left et top/bottom comme fait ici. */
+    top : 60px;
+}
+.para2-2{
+    background-color: blue;
+    border : 3px solid black;
+    position : relative ;
+    top : 60px;
+}
+.para2-2 strong{
+    position : absolute ; 
+    left : 300px; /* Se met par rapport à son élément parent para2-2*/
+}
+.para3-1{
+    color : green ;
+    border : 3px solid green ;
+    height : 80px ;
+    position : relative;
+    z-index : 2; /*La propriété z-index permet de placer une bordure ou une image en premier par rapport
+    à une autre (celle qui a le z-index grand sera en premier plan par rapport à l'autre*/
+}
+.para3-2{
+    color : black ;
+    border : 3px solid black ;
+    height : 80px ;
+    position : relative;
+    bottom : 50px;
+    z-index : 1;
+}
