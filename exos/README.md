@@ -32,5 +32,5 @@ revenir à la ligne
 ## Mettre un lien dans le readme :
 Mon site [ici](https://www.inphb.ci)
 
-Mettre une image, un logo : 
+Mettre une image, un logo :  
 ![Mon logo](../images/image_qur'an.jpg)
