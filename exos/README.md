@@ -3,9 +3,12 @@
 ## Moi par contre je suis un titre de niveau 2
 -------------------------------
 __Texte en gras__
+
 *Texte en italique*
+
 Je tape du texte et je voudrais  
 revenir à la ligne
+
 ## Faire une liste à puce :
 
 * élément 1
@@ -27,7 +30,7 @@ revenir à la ligne
 `Je suis un bout de code`
 
 ## Mettre un lien dans le readme :
-Mon site [ici](https://inphb.ci)
+Mon site [ici](https://www.inphb.ci)
 
-Mettre une image, un logo :
-![Mon logo](images/image_qur'an.jpg)
+Mettre une image, un logo : 
+![Mon logo](../images/image_qur'an.jpg)
